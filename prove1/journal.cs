@@ -50,12 +50,15 @@ namespace DailyJournal
         }
 
         public void SaveToFile()
-        {
+        { 
+            Console.WriteLine("Create a Filename: ");
+              string filename = Console.ReadLine();
             Console.WriteLine("Journal saved to file.");
         }
 
         public void LoadFromFile()
-        {
+        {   
+            
             Console.WriteLine("Journal loaded from file.");
         }
     }
