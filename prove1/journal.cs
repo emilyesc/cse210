@@ -39,9 +39,9 @@ namespace DailyJournal
         public void AddPrompt()
             {
              Console.WriteLine("Enter Prompt: ");
-              string newprompt = Console.ReadLine();
-              prompts.Add(newprompt);
-              Console.WriteLine("Your new prompt - " + newprompt + " - has been added");
+              string newPrompt = Console.ReadLine();
+              prompts.Add(newPrompt);
+              Console.WriteLine("Your new prompt - " + newPrompt + " - has been added");
             }
         public void DisplayEntries()
         {
