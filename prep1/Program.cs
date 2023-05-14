@@ -1,14 +1,16 @@
-﻿namespace Hello_world
+using System;
+
+ namespace Hello_world
 {
     internal class Program
     {
         static void Main(string[] args)
         {
             Console.Write("What is your first name?");
-            string first = Console.ReadLine();
+            string firstName = Console.ReadLine();
             Console.Write("What is your last name?");
-            string last = Console.ReadLine();
-            Console.WriteLine($"Your name is {last}, {first} {last}");
+            string lastName = Console.ReadLine();
+            Console.WriteLine($"Your name is {lastName}, {firstName} {lastName}");
         }
     }
 }
