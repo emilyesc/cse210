@@ -40,7 +40,7 @@ namespace DailyJournal
             {
              Console.WriteLine("Enter Prompt: ");
               string newprompt = Console.ReadLine();
-              Console.WriteLine("Your new prompt - " newpromt " - has been added");
+              Console.WriteLine("Your new prompt - " + newprompt + " - has been added");
             }
         public void DisplayEntries()
         {
@@ -84,7 +84,7 @@ namespace DailyJournal
                 Console.WriteLine("2. Display Journal Entries");
                 Console.WriteLine("3. Save Journal");
                 Console.WriteLine("4. Load Journal");
-                Console.Writeline("5. Add Custom Prompt");
+                Console.WriteLine("5. Add Custom Prompt");
                 Console.WriteLine("6. Quit");
 
                 Console.Write("What would you like to do? ");
@@ -104,7 +104,7 @@ namespace DailyJournal
                     case "4":
                         journal.LoadFromFile();
                         break;
-                    case "5"
+                    case "5":
                         journal.AddPrompt();
                         break;
                     case "6":
