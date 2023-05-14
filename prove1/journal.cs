@@ -40,7 +40,7 @@ namespace DailyJournal
             {
              Console.WriteLine("Enter Prompt: ");
               string newPrompt = Console.ReadLine();
-              Journal.prompts.Add(newPrompt);
+              prompts.Add(new prompts(newPrompt);
               Console.WriteLine("Your new prompt - " + newPrompt + " - has been added");
             }
         public void DisplayEntries()
