@@ -1,3 +1,7 @@
+using System;
+using System.IO;
+using System.Text;
+
 namespace DailyJournal
 {
     class Entry
@@ -58,8 +62,11 @@ namespace DailyJournal
  
             List<string> prompts = new List<string>
             {
-                "Did anything unexpected happen today that surprised you? ",
-                "How did you see God's hand in your life today?"
+                "Did anything unexpected happen today? ",
+                "How did you see God's hand in your life today?",
+                "Is there anything you wish you did differently today?",
+                "What blessings happened today?",
+                "What's something you learned today?",
             };
 
             bool quit = false;
