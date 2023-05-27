@@ -48,3 +48,8 @@ public void LoadScriptures()
     {
 
     }
+
+     public void GetRenderedText()
+    {
+
+    }
