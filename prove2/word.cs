@@ -13,6 +13,11 @@ public class word
    
     public Word(string text, string visible)
     {
-
     }
     
+    public void GetRenderedText(Scripture scripture)
+    {
+        var _words = scripture._scriptureText;
+        _result = _words.Split(" ");
+        _hidden = new List<int>();
+    }
