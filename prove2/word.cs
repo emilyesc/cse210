@@ -26,4 +26,26 @@ public class word
     {
     }
     
-    
+    public void Show(string ref1)
+    {
+        _ref = ref1;
+        Console.Clear();
+        Console.Write("\n**** Press spacebar or enter to hide words ****");
+        Console.Write("\n**** Press Q to Quit ****\n");
+        Console.WriteLine($"{_ref}");
+        for (var i = 0; i < _result.Length; i++)
+        {
+            var str = _result[i];
+            int len = str.Length;
+            string dashedLine = new String('_', len);
+            if (_hidden.Contains(i))
+            {
+                Console.Write($"{dashedLine} ");
+            }
+            else
+            {
+                Console.Write($"{str} ");
+            }
+        }
+    }
+
