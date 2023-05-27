@@ -64,3 +64,13 @@ public class Reference
             return ref1 = $"\n{refi._book} {refi._chapter}:{refi._verseStart}-{refi._verseEnd}";
         }
     }
+
+        public void ReferenceOne()
+    {
+        Console.WriteLine($"\n{_book} {_chapter}:{_verseStart}");
+    }
+    public void ReferenceTwo()
+    {
+        Console.WriteLine($"\n{_book} {_chapter}:{_verseStart}-{_verseEnd}");
+    }
+}
