@@ -7,3 +7,6 @@ public class word
     public string[] _result;
     public List<int> _hidden;
   
+  public Word()
+    {
+    }
