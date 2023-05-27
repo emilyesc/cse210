@@ -25,3 +25,8 @@ public void LoadScriptures()
             _scripture.Add(entry);
         }
     }
+
+    public void ShowScripture()
+    {
+        Console.WriteLine($"\n{_text}");
+    }
