@@ -29,3 +29,38 @@ public class Reference
             _reference.Add(entry);
         }
     }
+   
+
+    public void ReferenceDisplay()
+    {
+        foreach (Reference item in _reference)
+        {
+           
+            if (item._verseEnd.Equals(0))
+            {
+                item.ReferenceOne();
+            }
+            else
+            {
+                item.ReferenceTwo();
+            }
+        }
+    }
+    
+    
+      public string GetReference(Scripture scripture)
+    {
+        var index = scripture._index;
+
+        var refi = _reference[index];
+        string ref1;
+        if (refi._verseEnd.Equals(0))
+        {
+            return ref1 = ($"\n{refi._book} {refi._chapter}:{refi._verseStart}");
+
+        }
+        else
+        {
+            return ref1 = $"\n{refi._book} {refi._chapter}:{refi._verseStart}-{refi._verseEnd}";
+        }
+    }
