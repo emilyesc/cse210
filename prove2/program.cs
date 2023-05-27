@@ -70,7 +70,7 @@ What would you like to do?  ";
         string userInput = Console.ReadLine();
         userInput.ToLower();
         int userChoice = 0;
-        // This block catches any non integer values that are entered
+        // This block catches the non integer values that are entered to end the program
         try
         {
             if (userInput == "q")
