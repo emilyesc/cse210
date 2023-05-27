@@ -21,3 +21,9 @@ public class word
         _result = _words.Split(" ");
         _hidden = new List<int>();
     }
+    
+    public void GetRenderedRef(Scripture scripture)
+    {
+    }
+    
+    
