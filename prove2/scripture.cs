@@ -1,6 +1,6 @@
 using System;
 
-public class Scripture
+public class scripture
 
     public List<Scripture> _scripture = new List<Scripture>();
     private string _fileName = "referencetext.txt";
