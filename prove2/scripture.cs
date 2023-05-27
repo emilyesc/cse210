@@ -30,3 +30,10 @@ public void LoadScriptures()
     {
         Console.WriteLine($"\n{_text}");
     }
+
+        public int GetRandomIndex()
+    {
+        var random = new Random();
+        _index = random.Next(_scripture.Count);
+        return _index;
+    }
