@@ -37,3 +37,14 @@ public void LoadScriptures()
         _index = random.Next(_scripture.Count);
         return _index;
     }
+
+        public string RandomScripture()
+    {
+        _index = GetRandomIndex();
+        return _scriptureText = _scripture[_index]._text;
+    }
+
+     public void HideWords()
+    {
+
+    }
