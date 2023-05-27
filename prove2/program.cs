@@ -4,6 +4,7 @@ class Program
 {
   static void Main(string[] args)
     {
+    // This will clear the console in preperation for each use
       Console.Clear();
         Reference reference = new Reference();
         reference.LoadReference();
