@@ -1,6 +1,6 @@
 using System;
 
-public class Reference
+public class reference
 {
     public List<Reference> _reference = new List<Reference>();
     private string _fileName = "referencetext.txt";
