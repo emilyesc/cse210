@@ -53,3 +53,12 @@ public void LoadScriptures()
     {
 
     }
+
+      public void IsCompletelyHidden()
+    {
+
+    }
+
+
+}
+
