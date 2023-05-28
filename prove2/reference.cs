@@ -10,7 +10,7 @@ public class reference
     private int _verseStart;
     private int _verseEnd;
 
-  public void LoadReference()
+  private void LoadReference()
     {
         List<string> readText = File.ReadAllLines(_fileName).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
 
@@ -31,7 +31,7 @@ public class reference
     }
    
 
-    public void ReferenceDisplay()
+    private void ReferenceDisplay()
     {
         foreach (Reference item in _reference)
         {
@@ -48,7 +48,7 @@ public class reference
     }
     
     
-      public string GetReference(Scripture scripture)
+      private string GetReference(Scripture scripture)
     {
         var index = scripture._index;
 
