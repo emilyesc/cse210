@@ -2,7 +2,7 @@ using System;
 
 class program
 {
-  static void Main(string[] args)
+  private void Main(string[] args)
     {
     // This will clear the console in preperation for each use
       Console.Clear();
@@ -51,7 +51,7 @@ class program
 
     }
      
-    static int UserChoice()
+    private int UserChoice()
     // Method to display choices to user
     {
         Reference reference = new Reference();
