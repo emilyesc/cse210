@@ -11,22 +11,22 @@ public class word
     {
     }
    
-    public Word(string text, string visible)
+    private Word(string text, string visible)
     {
     }
     
-    public void GetRenderedText(Scripture scripture)
+    private void GetRenderedText(Scripture scripture)
     {
         var _words = scripture._scriptureText;
         _result = _words.Split(" ");
         _hidden = new List<int>();
     }
     
-    public void GetRenderedRef(Scripture scripture)
+    private void GetRenderedRef(Scripture scripture)
     {
     }
     
-    public void Show(string ref1)
+    private void Show(string ref1)
     {
         _ref = ref1;
         Console.Clear();
@@ -49,7 +49,7 @@ public class word
         }
     }
 
-    public void GetReadKey()
+    private void GetReadKey()
     {
         var input = Console.ReadKey();
         if (input.Key == ConsoleKey.Spacebar || input.Key == ConsoleKey.Enter)
@@ -62,7 +62,7 @@ public class word
         }
     }
     
-    public void GetNewHiddenWord()
+    private void GetNewHiddenWord()
     {
         
         var random = new Random();
