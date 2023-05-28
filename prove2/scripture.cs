@@ -9,7 +9,7 @@ public class scripture
     public int _index;
     public string _scriptureText;
 
-public void LoadScriptures()
+private void LoadScriptures()
     {
         List<string> readText = File.ReadAllLines(_fileName).Where(arg => !string.IsNullOrWhiteSpace(arg)).ToList();
 
@@ -26,7 +26,7 @@ public void LoadScriptures()
         }
     }
 
-    public void ShowScripture()
+    private void ShowScripture()
     {
         Console.WriteLine($"\n{_text}");
     }
@@ -38,23 +38,23 @@ public void LoadScriptures()
         return _index;
     }
 
-        public string RandomScripture()
+        private string RandomScripture()
     {
         _index = GetRandomIndex();
         return _scriptureText = _scripture[_index]._text;
     }
 
-     public void HideWords()
+     private void HideWords()
     {
 
     }
 
-     public void GetRenderedText()
+     private void GetRenderedText()
     {
 
     }
 
-      public void IsCompletelyHidden()
+      private void IsCompletelyHidden()
     {
 
     }
