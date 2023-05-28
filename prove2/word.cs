@@ -49,3 +49,36 @@ public class word
         }
     }
 
+    public void GetReadKey()
+    {
+        var input = Console.ReadKey();
+        if (input.Key == ConsoleKey.Spacebar || input.Key == ConsoleKey.Enter)
+        {
+            GetNewHiddenWord();
+        }
+        else if (input.Key == ConsoleKey.Q)
+        {
+            Environment.Exit(0);
+        }
+    }
+    
+    public void GetNewHiddenWord()
+    {
+        
+        var random = new Random();
+        var index1 = random.Next(_result.Length);
+        var index2 = random.Next(_result.Length);
+        if (_hidden.Contains(index1) || _hidden.Contains(index2))
+        {
+            GetNewHiddenWord();
+        }
+        else
+        {
+            _hidden.Add(index1);
+            _hidden.Add(index2);
+
+        }
+    }
+
+
+}
