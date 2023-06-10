@@ -12,5 +12,9 @@ public class Menu
     
     public void DisplayMenu()
     {
+         for (int x = 0; x < menuOpts.Count; x++)
+        {
+            Console.WriteLine(menuOpts[x]);
+        }
     }
  }
