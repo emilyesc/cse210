@@ -9,4 +9,8 @@ public class Menu
         "3. Listing Activity",
         "4. Quit"
     }
+    
+    public void DisplayMenu()
+    {
+    }
  }
