@@ -10,6 +10,7 @@ class Breathing : Activity
 
     }
 
+//start by calling the timer then do the simple animation for time passing
     public void startBreathing()
     {
         Timer breatheTime = new Timer();
