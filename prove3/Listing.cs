@@ -21,3 +21,30 @@ class Listing : Activity
         "> What would your Heavenly Father like you to remember? \n"
     };
     string _welcomeMessage = "\nThis activity will help you reflect on the good things in your life by having you list as many\nthings as you can in a certain area. \n";
+    
+    
+    public void startListing()
+    {
+        Timer listTime = new Timer();
+        listTime.activityTime();
+        int seconds = listTime._timeSet;
+        DateTime startTime = DateTime.Now;
+        DateTime endTime = startTime.AddSeconds(listTime._timeSet);
+        var prompt = new Random();
+        int listIndex = prompt.Next(keepListing.Count);
+        string listPrompt = keepListing[listIndex];
+        Console.WriteLine(listPrompt);
+        Console.WriteLine("\nTake 5 seconds to consider, then start listing.\n");
+        Thread.Sleep(5000);
+        int lCount = 0;
+        Console.WriteLine("Start Listing! \n");
+
+        {
+            while (DateTime.Now < endTime)
+            {
+                Console.Write("> ");
+                string list = Console.ReadLine();
+                lCount++;
+            }
+        }
+
