@@ -46,7 +46,7 @@ class Program
                 Listing listing = new Listing();
                 listing.startListing();
             }
-              
+              //A little journal activity
             else if (activity == 4)
                 {
                 Console.WriteLine("Write one or two sentences about your day");
