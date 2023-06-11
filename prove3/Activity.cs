@@ -8,8 +8,6 @@ class Activity
 
     public Activity()
     {
-
     }
-
 
 }
