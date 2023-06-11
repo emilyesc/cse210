@@ -2,6 +2,7 @@ using System;
 
 class Timer
 {
+   //after experimenting, i found it was better to seperate the timer like this
     public Timer()
     {
 
@@ -9,7 +10,7 @@ class Timer
     public int _timeSet;
     protected string _timeRequested = "How long in seconds would you like to do this activity? ";
     protected string _getReady = "Prepare to begin. . . ";
-
+        
     public int getTime()
     {
         Console.WriteLine(_timeRequested);
