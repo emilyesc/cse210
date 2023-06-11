@@ -6,7 +6,7 @@ class Listing : Activity
     {
 
     }
-
+    
     List<string> keepListing = new List<string>()
     {
         "> Who are people that you appreciate? \n",
@@ -22,7 +22,7 @@ class Listing : Activity
     };
     string _welcomeMessage = "\nThis activity will help you reflect on the good things in your life by having you list as many\nthings as you can in a certain area. \n";
     
-    
+    //Displays a question, gives 5 seconds before giving a user-set amount of time to list answers
     public void startListing()
     {
         Timer listTime = new Timer();
@@ -54,4 +54,5 @@ class Listing : Activity
 
 
 }
+
 
