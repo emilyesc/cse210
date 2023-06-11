@@ -53,7 +53,8 @@ class Reflecting : Activity
         "> Think of a time you made someone smile. \n \n",
         "> Think of a time when the work you were doing felt satisfying. \n \n"
     };
-
+    
+    //starts a timer, selects a first prompt, then a second prompt after a short delay
    public void startReflecting()
     {
         Console.WriteLine(_welcomeMessage);
