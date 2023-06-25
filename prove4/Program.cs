@@ -55,7 +55,15 @@ class Program
                     int pointVal = goal3.promptPoints();
                     goalsList.Add(goal3);
                 }
-
+                
+                 if (type == 4)
+                {
+                    Eternal goal3 = new Negative();
+                    string name = goal4.promptName();
+                    string desc = goal4.promptDesc();
+                    int pointVal = goal4.promptPoints();
+                    goalsList.Add(goal4);
+                }
                 Console.WriteLine("\nMake another selection: ");
                 startGoals = true;
             }
@@ -79,13 +87,17 @@ class Program
                     {
                         Console.WriteLine($"{x++}. [ ] {name}, {desc}, worth {pworth} points.");
                     }
-                    else if (type == "C")
+                    else if (Goal._type == "C")
                     {
                         Console.WriteLine($"{x++}. [ ] {name}, {desc}, worth {pworth} points, {numEntries} / {numTillDone} completed.");
                     }
                     else if (Goal._type == "E")
                     {
                         Console.WriteLine($"{x++}. [ ] {name}, {desc}, worth {pworth} points. *Eternal*");
+                    }
+                    else if (Goal._type == "N")
+                    {
+                        Console.WriteLine($"{x++}. [ ] {name}, {desc}, subtracts {pworth} points, Negative");
                     }
                 }
                 startGoals = true;
@@ -163,7 +175,11 @@ class Program
                             goal._numTillDone += 1;
                             points += goal._pointVal;
                         }
-                        if (goal._type == "E")
+                       if (goal._type == "N")
+                        {
+                            points -= goal._pointVal;
+                        }
+                         if (goal._type == "E")
                         {
                             points += goal._pointVal;
                         }
