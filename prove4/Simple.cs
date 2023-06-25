@@ -9,7 +9,6 @@ class Simple : Goal
     public Simple()
     {
         _type = "S";
-
     }
 
     public Simple(string name, string description, int pointVal, bool isComplete)
@@ -19,8 +18,8 @@ class Simple : Goal
         _description = description;
         _pointVal = pointVal;
         _isComplete = isComplete;
-
     }
+    
     public string getName()
     {
         Console.WriteLine("\nWhat is the name of your goal? ");
