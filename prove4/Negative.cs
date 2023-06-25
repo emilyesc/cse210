@@ -21,3 +21,4 @@ class Negative : Goal
         _isComplete = isComplete;
 
     }
+}
