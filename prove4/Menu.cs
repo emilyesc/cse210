@@ -32,6 +32,7 @@ public class Menu
         "1. Simple",
         "2. Checklist",
         "3. Eternal"
+        "4. Negative"
     };
 
     public void displayGoalTypes()
