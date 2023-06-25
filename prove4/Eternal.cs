@@ -8,7 +8,6 @@ class Eternal : Goal
     public Eternal()
     {
         _type = "E";
-
     }
 
     public Eternal(string name, string desc, int points)
@@ -19,5 +18,4 @@ class Eternal : Goal
         _pointVal = points;
     }
 
-  
 }
