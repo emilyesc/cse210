@@ -4,7 +4,6 @@ using System.IO;
 
 class Checklist : Goal
 {
-    // int x = 0;
     bool _isComplete = false;
     int _numEntries = 0;
     int _numTillDone = 0;
@@ -21,7 +20,6 @@ class Checklist : Goal
         _pointVal = points;
         _numTillDone = numTillDone;
         _numEntries = numEntries;
-
     }
 
 
@@ -31,7 +29,6 @@ class Checklist : Goal
         int numTillDone = Int32.Parse(Console.ReadLine());
         _numTillDone = numTillDone;
         return _numTillDone;
-
     }
 
 }
