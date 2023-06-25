@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-class Goal
-{
+ class Goal
+  {
     public string _type;
     public string _name;
     public string _description;
@@ -14,12 +14,11 @@ class Goal
     public int _pointsEarned;
     public string check;
 
-    public Goal()
+ public Goal()
     {
-
     }
 
-    public Goal(string type, string name, string description, int pointVal, bool isComplete, int numEntries, int numTillDone)
+ public Goal(string type, string name, string description, int pointVal, bool isComplete, int numEntries, int numTillDone)
     {
         _type = type;
         _name = name;
@@ -28,7 +27,6 @@ class Goal
         _isComplete = isComplete;
         _numEntries = numEntries;
         _numTillDone = numTillDone;
-
     }
 
 
