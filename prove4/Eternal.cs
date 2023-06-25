@@ -1,8 +1,23 @@
 using System;
+using System.Collections.Generic;
+using System.IO;
 
-public class Eternal : Goal
+class Eternal : Goal
 {
-	public Eternal()
-	{
-	}
+    bool _isComplete = false;
+    public Eternal()
+    {
+        _type = "E";
+
+    }
+
+    public Eternal(string name, string desc, int points)
+    {
+        _type = "E";
+        _name = name;
+        _description = desc;
+        _pointVal = points;
+    }
+
+  
 }
