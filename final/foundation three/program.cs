@@ -56,16 +56,16 @@ namespace foundation3
                 {
                     
                     case "1":
-                        comments.Event();
+                        schedule.Event();
                         break;
                     case "2":
-                        comments.Time();
+                        schedule.Time();
                         break;
                     case "3":
-                        comments.Locations();
+                        schedule.Locations();
                         break;
                     case "4":
-                        comments.Plan();
+                        schedule.Plan();
                         break;
                     case "5":
                         quit = true;
