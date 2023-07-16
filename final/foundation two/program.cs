@@ -51,13 +51,13 @@ namespace foundation2
                 {
                     
                     case "1":
-                        comments.Display();
+                        orders.Display();
                         break;
                     case "2":
-                        comments.Date();
+                        orders.Date();
                         break;
                     case "3":
-                        comments.Products();
+                        orders.Products();
                         break;
                     case "4":
                         quit = true;
