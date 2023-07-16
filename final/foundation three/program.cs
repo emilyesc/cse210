@@ -1,36 +1,36 @@
 using System;
 
 
-namespace foundation1
+namespace foundation3
 {
-    class Video
+    class Events
     {
-        public string videoName { get; set; }
-        public string comments { get; set; }
-        public string views { get; set; }
+        public string events { get; set; }
+        public string location { get; set; }
+        public string time { get; set; }
     }
 
-    class Comments
+    class Schedule
     {
 
-        public void Display()
+        public void Event()
         {
-            Console.WriteLine(comments);
+            Console.WriteLine(events);
  
         }
 
-        public void Content()
+        public void Locations()
         { 
-         Console.WriteLine(content);
+         Console.WriteLine(location);
         }
 
-        public void Date()
+        public void Time()
         { 
-        Console.WriteLine(date);
+        Console.WriteLine(time);
         }
-        public void Analyze()
+        public void Plan()
         {   
-          Console.WriteLine(analyze);
+          Console.WriteLine(plan);
         }
     }
 
@@ -41,12 +41,12 @@ namespace foundation1
             bool quit = false;
             while (!quit)
             {
-                Console.WriteLine("\nWelcome to the Video Analysis Program");
+                Console.WriteLine("\nWelcome to the Event Planning Program");
                 Console.WriteLine("Please Select one of the following choices:");
-                Console.WriteLine("1. Display Comments");
-                Console.WriteLine("2. Date");
-                Console.WriteLine("3. Analysis");
-                Console.WriteLine("4. Content");
+                Console.WriteLine("1. View Available Events");
+                Console.WriteLine("2. View Times");
+                Console.WriteLine("3. View Locations");
+                Console.WriteLine("4. View Planned Events");
                 Console.WriteLine("5. Quit");
 
                 Console.Write("What would you like to do? ");
@@ -56,16 +56,16 @@ namespace foundation1
                 {
                     
                     case "1":
-                        comments.Display();
+                        comments.Event();
                         break;
                     case "2":
-                        comments.Date();
+                        comments.Time();
                         break;
                     case "3":
-                        comments.Analyze();
+                        comments.Locations();
                         break;
                     case "4":
-                        comments.Content();
+                        comments.Plan();
                         break;
                     case "5":
                         quit = true;
