@@ -3,25 +3,25 @@ using System;
 
 namespace foundation2
 {
-    class Video
+    class Customer
     {
-        public string videoName { get; set; }
-        public string comments { get; set; }
-        public string views { get; set; }
+        public string customers { get; set; }
+        public string dats { get; set; }
+        public string products { get; set; }
     }
 
-    class Comments
+    class Orders
     {
 
         public void Display()
         {
-            Console.WriteLine(comments);
+            Console.WriteLine(orders);
  
         }
 
         public void Products()
         { 
-         Console.WriteLine(content);
+         Console.WriteLine(products);
         }
 
         public void Date()
